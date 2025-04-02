@@ -6,17 +6,29 @@ function App() {
 
 	return (
 		<>
-			<h1>Vite + React</h1>
+			<h1>tailwind-learn4</h1>
 			<button className="btn1" type="button" onClick={() => setCount((count) => count + 1)}>
 				count is {count}
 			</button>
-			<p className="font-sans">
-				TailWindCSS v4 で Google Fonts を使う練習。 効果がわかりやすいように、フォントを{" "}
-				<a href="https://fonts.google.com/specimen/Dela+Gothic+One" className="font-serif">
-					Dela Gothic One
-				</a>{" "}
-				にしてあります。この部分だけ Noto。
-				あとブラウザの横幅を変えるとレスポンシブデザインを悪用してフォントが変わります。
+			<p className="font-noto">
+				TailWindCSS v4 で Google Fonts を使う練習。 効果がわかりやすいように、フォントを
+				<ul>
+					<li>
+						Serif は{" "}
+						<a href="https://fonts.google.com/specimen/Kaisei+Decol" className="font-serif">
+							Kaisei Decol
+						</a>{" "}
+						(デフォルト)
+					</li>
+					<li>
+						Sans-Serif は{" "}
+						<a href="https://fonts.google.com/specimen/Dela+Gothic+One" className="font-sans">
+							Dela Gothic One
+						</a>{" "}
+						(ブラウザの横幅を縮めるとレスポンシブデザインで変わります)
+					</li>
+				</ul>
+				にしてあります (この部分だけ Noto)。
 			</p>
 			<p>
 				人類社会のすべての構成員の固有の尊厳と平等で譲ることのできない権利とを承認することは、世界における自由、正義及び平和の基礎であるので、

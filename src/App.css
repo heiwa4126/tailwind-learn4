@@ -7,8 +7,16 @@
 	--font-noto: "Noto Sans JP", sans-serif;
 }
 
+@utility btn {
+	@apply text-white rounded-full px-7 py-1 font-semibold;
+}
+
 .btn1 {
-	@apply bg-orange-500 text-white font-bold rounded-full px-7 py-1;
-	@apply hover:bg-orange-600 active:bg-orange-700;
+	@apply btn bg-red-700 hover:bg-red-600 active:bg-red-800;
 	@apply focus:outline-none focus:ring-2 focus:ring-orange-400;
+}
+
+.btn2 {
+	@apply btn bg-blue-700 hover:bg-blue-600 active:bg-blue-800;
+	@apply focus:outline-none focus:ring-2 focus:ring-blue-400;
 }

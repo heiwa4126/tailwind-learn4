@@ -1,15 +1,26 @@
 import { useState } from "react";
 import "./App.css";
 
-function App() {
-	const [count, setCount] = useState(0);
+function Counter({
+	initialCount = 0,
+	className = "btn1",
+}: { initialCount?: number; className?: string }) {
+	const [count, setCount] = useState(initialCount);
+	return (
+		<button className={className} type="button" onClick={() => setCount((count) => count + 1)}>
+			count is {count}
+		</button>
+	);
+}
 
+function App() {
 	return (
 		<>
 			<h1>tailwind-learn4</h1>
-			<button className="btn1" type="button" onClick={() => setCount((count) => count + 1)}>
-				count is {count}
-			</button>
+			<div>
+				<Counter />
+				<Counter className="ml-2 btn2" initialCount={100} />
+			</div>
 			<p className="font-noto">
 				TailWindCSS v4 で Google Fonts を使う練習。 効果がわかりやすいように、フォントを
 				<ul>
@@ -25,12 +36,12 @@ function App() {
 						<a href="https://fonts.google.com/specimen/Dela+Gothic+One" className="font-sans">
 							Dela Gothic One
 						</a>{" "}
-						(ブラウザの横幅を縮めるとレスポンシブデザインで変わります)
+						(ブラウザの横幅を縮めるとレスポンシブデザインでこっちに変わります)
 					</li>
 				</ul>
 				にしてあります (この部分だけ Noto)。
 			</p>
-			<p>
+			<p className="text-justify">
 				人類社会のすべての構成員の固有の尊厳と平等で譲ることのできない権利とを承認することは、世界における自由、正義及び平和の基礎であるので、
 				人権の無視及び軽侮が、人類の良心を踏みにじった野蛮行為をもたらし、言論及び信仰の自由が受けられ、恐怖及び欠乏のない世界の到来が、一般の人々の最高の願望として宣言されたので、
 				人間が専制と圧迫とに対する最後の手段として反逆に訴えることがないようにするためには、法の支配によって人権保護することが肝要であるので、

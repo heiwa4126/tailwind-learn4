@@ -78,9 +78,6 @@ jobs:
           else
             export GITHUB_REPO_NAME="${{ steps.extract-repo-name.outputs.repo_name }}"
           fi
-          #--- this project special from here
-          pnpm parser:schedule
-          #--- this project special over here
           pnpm run build
 
       - name: Setup Pages

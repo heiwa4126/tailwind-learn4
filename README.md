@@ -1,6 +1,7 @@
 # tailwind-learn4
 
 TailWindCSS v4 で Google Fonts を使う練習。
+[デモ on GitHub Pages](https://heiwa4126.github.io/tailwind-learn4/)
 
 変更: もとは Dela Gothic と Noto だったのだけど、Noto が Windows 10,11 に標準インストールされるようになって、よくわからなくなったので修正。
 

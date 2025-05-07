@@ -1,7 +1,7 @@
 {
 	"name": "tailwind-learn4",
 	"private": true,
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
@@ -35,6 +35,8 @@
 		"vite": "^6.3.5"
 	},
 	"pnpm": {
-		"onlyBuiltDependencies": ["esbuild"]
+		"onlyBuiltDependencies": [
+			"esbuild"
+		]
 	}
 }

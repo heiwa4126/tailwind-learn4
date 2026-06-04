@@ -7,11 +7,17 @@ export default defineConfig({
 	base: process.env.GITHUB_REPO_NAME ?? "./",
 	plugins: [react(), tailwindcss()],
 	build: {
-		rollupOptions: {
-			external: ["react", "react-dom/client"],
+		minify: true,
+		rolldownOptions: {
+			external: ["react", "react-dom/client", "react-router"],
+			output: {
+				minify: {
+					compress: {
+						dropConsole: true,
+						dropDebugger: true,
+					},
+				},
+			},
 		},
-	},
-	esbuild: {
-		drop: ["console", "debugger"], // https://esbuild.github.io/api/#drop
 	},
 });

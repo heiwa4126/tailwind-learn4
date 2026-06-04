@@ -4,7 +4,10 @@ import "./App.css";
 function Counter({
 	initialCount = 0,
 	className = "btn1",
-}: { initialCount?: number; className?: string }) {
+}: {
+	initialCount?: number;
+	className?: string;
+}) {
 	const [count, setCount] = useState(initialCount);
 	return (
 		<button className={className} type="button" onClick={() => setCount((count) => count + 1)}>

@@ -13,12 +13,18 @@
 		"check": "biome check --write . && dprint check"
 	},
 	"dependencies": {
+<<<<<<< HEAD
 		"react": "^19.2.5",
 		"react-dom": "^19.2.5"
+=======
+		"react": "^19.2.6",
+		"react-dom": "^19.2.4"
+>>>>>>> 8dcb240e82455045df6eec99dfddbefc9c2af6f1
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
 		"@tailwindcss/typography": "^0.5.19",
+<<<<<<< HEAD
 		"@tailwindcss/vite": "^4.2.2",
 		"@tomjs/vite-plugin-html": "^1.5.2",
 		"@types/node": "^25.6.0",
@@ -33,6 +39,22 @@
 		"typescript": "~6.0.2",
 		"typescript-eslint": "^8.58.1",
 		"vite": "^8.0.8"
+=======
+		"@tailwindcss/vite": "^4.2.4",
+		"@tomjs/vite-plugin-html": "^1.5.2",
+		"@types/node": "^25.9.1",
+		"@types/react": "^19.2.14",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^5.2.0",
+		"eslint": "^9.39.2",
+		"eslint-plugin-react-hooks": "^7.1.1",
+		"eslint-plugin-react-refresh": "^0.5.2",
+		"globals": "^17.6.0",
+		"tailwindcss": "^4.2.4",
+		"typescript": "~5.9.3",
+		"typescript-eslint": "^8.60.1",
+		"vite": "^7.3.2"
+>>>>>>> 8dcb240e82455045df6eec99dfddbefc9c2af6f1
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": [

@@ -9,6 +9,7 @@
 		"lint": "eslint .",
 		"preview": "vite preview",
 		"bp": "tsc -b && vite build && vite preview",
+		"audit": "pnpm audit",
 		"format": "oxfmt",
 		"check": "oxfmt && oxlint --fix"
 	},

@@ -14,10 +14,10 @@ export default defineConfig({
 				minify: {
 					compress: {
 						dropConsole: true,
-						dropDebugger: true,
-					},
-				},
-			},
-		},
-	},
+						dropDebugger: true
+					}
+				}
+			}
+		}
+	}
 });

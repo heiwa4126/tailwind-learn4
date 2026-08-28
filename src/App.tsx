@@ -3,7 +3,7 @@ import "./App.css";
 
 function Counter({
 	initialCount = 0,
-	className = "btn1",
+	className = "btn1"
 }: {
 	initialCount?: number;
 	className?: string;

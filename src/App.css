@@ -2,21 +2,21 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-	--font-serif: "Kaisei Decol", sans-serif;
-	--font-sans: "Dela Gothic One", serif;
-	--font-noto: "Noto Sans JP", sans-serif;
+  --font-serif: "Kaisei Decol", sans-serif;
+  --font-sans: "Dela Gothic One", serif;
+  --font-noto: "Noto Sans JP", sans-serif;
 }
 
 @utility btn {
-	@apply text-white rounded-full px-7 py-1 font-semibold;
+  @apply text-white rounded-full px-7 py-1 font-semibold;
 }
 
 .btn1 {
-	@apply btn bg-red-700 hover:bg-red-600 active:bg-red-800;
-	@apply focus:outline-none focus:ring-2 focus:ring-orange-400;
+  @apply btn bg-red-700 hover:bg-red-600 active:bg-red-800;
+  @apply focus:outline-none focus:ring-2 focus:ring-orange-400;
 }
 
 .btn2 {
-	@apply btn bg-blue-700 hover:bg-blue-600 active:bg-blue-800;
-	@apply focus:outline-none focus:ring-2 focus:ring-blue-400;
+  @apply btn bg-blue-700 hover:bg-blue-600 active:bg-blue-800;
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-400;
 }

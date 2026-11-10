@@ -11,6 +11,16 @@ TailWindCSS v4 で Google Fonts を使う練習。
 
 ブラウザの横幅を狭めると、レスポンシブデザインを悪用してフォントが Serif から Sans に変わります。
 
+## 実行
+
+Vite+ にしました。
+
+```sh
+vp i
+vp dev
+vp build && vp preview
+```
+
 ## 参考
 
 - [font-family - Typography - Tailwind CSS](https://tailwindcss.com/docs/font-family)
